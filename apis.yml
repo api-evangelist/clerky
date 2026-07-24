@@ -1,7 +1,28 @@
 aid: clerky
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/clerky.png
 name: Clerky
-description: Clerky is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Clerky is an online legal service that helps startup founders handle their
+  legal paperwork safely and efficiently. Designed by startup attorneys formerly
+  at a Silicon Valley law firm, Clerky provides software and guided workflows for
+  Delaware incorporation and post-incorporation setup, fundraising (SAFEs,
+  convertible notes, board consents), hiring (offer letters, consulting
+  agreements, equity compensation), commercial documents (NDAs), and ongoing
+  corporate maintenance. Clerky is a Y Combinator portfolio company. It is a
+  legal document assistant rather than a law firm, and does not currently
+  publish a public developer API, developer portal, or programmatic
+  integrations.
 url: https://raw.githubusercontent.com/api-evangelist/clerky/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +32,48 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Legal
+- Legal Tech
+- Startups
+- Incorporation
+- Fundraising
+- Compliance
+- Document Automation
+- Y Combinator
 apis: []
+common:
+- type: Website
+  url: https://www.clerky.com/
+- type: Pricing
+  url: https://www.clerky.com/pricing
+- type: SignUp
+  url: https://app.clerky.com/
+- type: Login
+  url: https://app.clerky.com/
+- type: TermsOfService
+  url: https://www.clerky.com/terms
+- type: PrivacyPolicy
+  url: https://www.clerky.com/privacy
+- type: Blog
+  url: https://www.clerky.com/blog
+- type: Support
+  url: https://help.clerky.com/
+- type: HelpCenter
+  url: https://help.clerky.com/
+- type: About
+  url: https://www.clerky.com/about
+- type: DomainSecurity
+  url: security/clerky-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
